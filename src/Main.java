@@ -245,26 +245,28 @@ public class Main {
         // 17) Write a program to enter the numbers till the user wants and at the end the
         //program should display the largest and smallest numbers entered
 
-//        System.out.println("Please enter numbers and we will fine the largest and smallest:");
-//        boolean isrun=true;
-//        int largest=0;
-//        int smallest =0;
-//        while (isrun){
-//            System.out.println("Enter a new number:");
-//            int num = input.nextInt();
-//            if (num>largest){
-//                largest=num;
-//            } else if (num<smallest) {
-//                smallest=num;
-//            }
-//            System.out.println("Do you want to exit: (yes/no)");
-//            String exit= input.next();
-//            if (exit.equals("yes")){
-//                isrun=false;
-//            }
-//        }
-//        System.out.println("The largest number is: "+ largest);
-//        System.out.println("The smallest number is: "+ smallest);
+        System.out.println("Please enter numbers and we will fine the largest and smallest:");
+        boolean isrun=true;
+        int largest=-1000;
+        int smallest =1000;
+
+        while (isrun){
+            System.out.println("Enter a new number:");
+            int num = input.nextInt();
+            if (num>largest){
+                largest=num;
+            }
+            if (num<smallest) {
+                smallest=num;
+            }
+            System.out.println("Do you want to exit: (yes/no)");
+            String exit= input.next();
+            if (exit.equals("yes")){
+                isrun=false;
+            }
+        }
+        System.out.println("The largest number is: "+ largest);
+        System.out.println("The smallest number is: "+ smallest);
 
         //--------------------------------------------------------------------------------------------------------------------
         // 18) Determine and print the number of times the character ‘a’ appears in the input
